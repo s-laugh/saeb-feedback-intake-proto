@@ -1,0 +1,10 @@
+{
+  "ids": {
+    "Feedback": 2
+  },
+  "models": {
+    "Feedback": {
+      "1": "{\"capturedUrl\":\"https://service.canada.ca/fakenews\",\"componentName\":\"Fake News\",\"componentVersion\":\"0.0.1\",\"id\":\"1\"}"
+    }
+  }
+}
