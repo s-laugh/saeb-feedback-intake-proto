@@ -22,7 +22,7 @@ import {FeedbackRepository} from '../repositories';
 export class FeedbackController {
   constructor(
     @repository(FeedbackRepository)
-    public feedbackRepository : FeedbackRepository,
+    public feedbackRepository: FeedbackRepository,
   ) {}
 
   @post('/feedback', {
@@ -57,9 +57,7 @@ export class FeedbackController {
       },
     },
   })
-  async count(
-    @param.where(Feedback) where?: Where<Feedback>,
-  ): Promise<Count> {
+  async count(@param.where(Feedback) where?: Where<Feedback>): Promise<Count> {
     return this.feedbackRepository.count(where);
   }
 
@@ -120,7 +118,8 @@ export class FeedbackController {
   })
   async findById(
     @param.path.string('id') id: string,
-    @param.filter(Feedback, {exclude: 'where'}) filter?: FilterExcludingWhere<Feedback>
+    @param.filter(Feedback, {exclude: 'where'})
+    filter?: FilterExcludingWhere<Feedback>,
   ): Promise<Feedback> {
     return this.feedbackRepository.findById(id, filter);
   }

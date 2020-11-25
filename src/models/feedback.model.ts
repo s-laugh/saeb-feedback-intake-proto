@@ -43,7 +43,6 @@ export class Feedback extends Entity {
   })
   componentVersion: string;
 
-
   constructor(data?: Partial<Feedback>) {
     super(data);
   }
