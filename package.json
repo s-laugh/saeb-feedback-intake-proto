@@ -57,7 +57,7 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@loopback/build": "^6.2.7",
+    "@loopback/build": "^6.4.1",
     "source-map-support": "^0.5.19",
     "@loopback/testlab": "^3.2.9",
     "@types/node": "^10.17.45",
